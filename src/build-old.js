@@ -37,4 +37,7 @@ class UserBuilder {
 }
 
 const builder = new UserBuilder("Bob");
-const user = builder.setAddress(new Address("12345", "Main St.")).build();
+const user = builder
+  .setAge(33)
+  .setAddress(new Address("12345", "Main St."))
+  .build();
